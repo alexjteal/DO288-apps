@@ -5,7 +5,7 @@ set -e
 source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
 
 echo "---> Enabling s2i support in httpd24 image"
-
+echo "calling assemble $SERVER_PORT"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
